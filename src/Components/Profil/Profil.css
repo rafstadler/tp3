@@ -1,0 +1,15 @@
+.facebook-profil-container {
+  color: blue;
+  width: 40%;
+  margin: 50px auto;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.orange{
+    background-color:darkorange;
+}
+
+.vert{
+    background-color:darkgreen;
+}
