@@ -11,11 +11,11 @@ class ButtonProfil extends Component {
   render() {
       
       
-       const {nom}  = this.props.content;
+       const {prenom}  = this.props.content.profil.contenu;
     
     return (
       <div className="facebook-buttonprofil">
-        <button onClick={() => this.changeActuel()} type="button">{nom}</button>
+        <button onClick={() => this.changeActuel()} type="button">{prenom}</button>
       </div>
         
     );

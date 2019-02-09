@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 import './Post.css';
 
 class Post extends Component {
+    
+    
+    
+     liker= () => {
+        this.props.likecallback();
+    };
+
+
   render() {
-    const { pos } = this.props;
+    const { pos } = this.props.poste;
     const { like , texte } = pos;
     // PAREIL QUE
     // const { content } = this.props;
@@ -11,7 +19,7 @@ class Post extends Component {
       <div className="facebook-post-container">
         <p>{texte}</p>
         <p>{like}</p>
-        <button type="button">Like</button>
+        <button type="button" onClick={() => this.liker()} >Like</button>
       </div>
     );
   }
